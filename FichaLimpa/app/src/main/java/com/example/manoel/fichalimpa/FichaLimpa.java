@@ -44,10 +44,32 @@ public class FichaLimpa extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        final Button button = (Button) findViewById(R.id.mainSearchButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        final Button buttonSearch = (Button) findViewById(R.id.mainSearchButton);
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(FichaLimpa.this, SearchTab.class);
+                final TextView textViewContent = (TextView) findViewById(R.id.searchText);
+                String searchContent = textViewContent.getText().toString();
+                intent.putExtra("SEARCHED_KEYWORD", searchContent);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonAPI = (Button) findViewById(R.id.apiButton);
+        buttonAPI.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(FichaLimpa.this, APITab.class);
+                final TextView textViewContent = (TextView) findViewById(R.id.searchText);
+                String searchContent = textViewContent.getText().toString();
+                intent.putExtra("SEARCHED_KEYWORD", searchContent);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonDatabase = (Button) findViewById(R.id.databaseButton);
+        buttonDatabase.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(FichaLimpa.this, DatabaseTab.class);
                 final TextView textViewContent = (TextView) findViewById(R.id.searchText);
                 String searchContent = textViewContent.getText().toString();
                 intent.putExtra("SEARCHED_KEYWORD", searchContent);

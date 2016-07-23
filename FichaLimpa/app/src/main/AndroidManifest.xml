@@ -24,6 +24,12 @@
         <activity
             android:name=".SearchTab"
             android:label="@string/app_name" />
+        <activity
+            android:name=".DatabaseTab"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".APITab"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

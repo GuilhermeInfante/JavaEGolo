@@ -34,4 +34,20 @@
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignParentStart="true"
         style="@android:style/TextAppearance" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database"
+        android:id="@+id/databaseButton"
+        android:layout_below="@+id/mainSearchButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API"
+        android:id="@+id/apiButton"
+        android:layout_below="@+id/databaseButton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
