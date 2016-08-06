@@ -59,9 +59,6 @@ public class FichaLimpa extends AppCompatActivity
         buttonAPI.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(FichaLimpa.this, APITab.class);
-                final TextView textViewContent = (TextView) findViewById(R.id.searchText);
-                String searchContent = textViewContent.getText().toString();
-                intent.putExtra("SEARCHED_KEYWORD", searchContent);
                 startActivity(intent);
             }
         });
@@ -70,9 +67,14 @@ public class FichaLimpa extends AppCompatActivity
         buttonDatabase.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(FichaLimpa.this, DatabaseTab.class);
-                final TextView textViewContent = (TextView) findViewById(R.id.searchText);
-                String searchContent = textViewContent.getText().toString();
-                intent.putExtra("SEARCHED_KEYWORD", searchContent);
+                startActivity(intent);
+            }
+        });
+
+        final Button buttonSocialMedia = (Button) findViewById(R.id.socialMediaButton);
+        buttonDatabase.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(FichaLimpa.this, SocialMediaTab.class);
                 startActivity(intent);
             }
         });

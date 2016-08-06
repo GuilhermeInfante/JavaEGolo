@@ -30,6 +30,9 @@
         <activity
             android:name=".APITab"
             android:label="@string/app_name" />
+        <activity
+            android:name=".SocialMediaTab"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

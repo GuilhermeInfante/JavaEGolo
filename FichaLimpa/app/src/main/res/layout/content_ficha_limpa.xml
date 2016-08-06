@@ -50,4 +50,12 @@
         android:id="@+id/apiButton"
         android:layout_below="@+id/databaseButton"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redes Sociais"
+        android:id="@+id/socialMediaButton"
+        android:layout_below="@+id/apiButton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -1,17 +1,15 @@
 package com.example.manoel.fichalimpa;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 /**
- * Created by Manoel on 7/23/2016.
+ * Created by Manoel on 8/6/2016.
  */
-public class APITab extends AppCompatActivity {
+public class SocialMediaTab  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.api_layout);
+        setContentView(R.layout.social_media_layout);
     }
 }
